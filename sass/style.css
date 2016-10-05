@@ -1,0 +1,17 @@
+img {
+  height: 200px;
+  width: 200px; }
+
+span {
+  font-size: 5em; }
+
+.cat-a, .cat-b {
+  border: 5px solid #932;
+  width: 25%;
+  text-align: center; }
+
+.cat-b {
+  float: right;
+  margin-top: -28%; }
+
+/*# sourceMappingURL=style.css.map */
