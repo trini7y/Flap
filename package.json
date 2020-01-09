@@ -1,0 +1,20 @@
+{
+  "name": "Flap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trini7y/Flap.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trini7y/Flap/issues"
+  },
+  "homepage": "https://github.com/trini7y/Flap#readme"
+}

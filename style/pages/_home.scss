@@ -1,6 +1,15 @@
+.page{
+	display:none;
+	position:fixed;
+	max-height:100vh;
+}
+.active{
+	display:block;
+}
 .home{
 	background:linear-gradient(100deg, rgba(255, 123, 0, 0.6) 0%, rgba(0, 123, 0, 0.6) 150%);
 	text-align:center;
+	min-height:100%;
 
 
 	.name{
@@ -30,7 +39,7 @@
 			// height:4em;
 			// width:10%;
 			border:1px solid white;
-			border-radius:2px;
+			// border-radius:2px;
 			background:transparent;
 			cursor:pointer;
 			color:white;
@@ -40,14 +49,6 @@
 			font-size:2em;
 			transition: all 1s ease;
 			font-weight:bold;
-			a{
-				color:white;
-
-				&:hover{
-				color:rgba(0, 123, 0, 0.6);
-				background: white;
-			  }
-			}
 
 			&:hover{
 				color:rgba(0, 123, 0, 0.6);
