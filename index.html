@@ -8,18 +8,17 @@
 </head>
 <body class="home">
 
-   <div id="name" class="name">
-   		<h2>FLAP</h2>
-   		<input type="name" name="name" placeholder="Enter your name">
-    <a href="todo.html">
-    	<button id="nav" data-target="main" class="nav-link">Next</button>
-    </a>
-  </div>
-
-
-  <div class="page nav-link" id="main">
-      <h2>Main</h2>
-  </div>
+<main data-router-wrapper>
+  <section data-router-view="home" class="todo-page">
+     <div id="name" class="name">
+     		<h2>FLAP</h2>
+     		<input type="name" name="name" placeholder="Enter your name">
+      <a href="todo.html">
+      	<button id="nav" data-target="main" class="nav-link">Next</button>
+      </a>
+    </div>
+  </section>
+</main>
 
 <script type="text/javascript" src="js/main.js"></script>
 </body>
