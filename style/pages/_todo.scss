@@ -1,3 +1,6 @@
+.todo-area{
+	background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
 .all{
 	text-align:center;
 }
@@ -10,7 +13,11 @@ form{
 	width:50%;
 	padding-top:5%;
 	font-size: 3em;
-	border:1px solid grey;
+	border:none;
+	border-bottom:1px solid white;
+	background-color:transparent;
+	outline:none;
+	color:white;
 	}
 }
 .dummie{

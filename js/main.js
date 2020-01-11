@@ -1,14 +1,3 @@
-import Highway from '@dogstudio/highway';
-import Fade from './transition';
-
-
-const H = new Highway.Core({
-	transitions:{
-		default:Fade
-	}
-});
-
-history.replaceState({}, 'Home', 'EnterName');
 function clicked(){
 	var li = document.createElement("li");
 	var inputValue = document.getElementById("myInput").value;
