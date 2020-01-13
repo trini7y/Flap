@@ -1,6 +1,6 @@
+dist
+node_modules
 main.css.map
 .sass-cache
 README.md
 .cache
-dist
-node_modules
