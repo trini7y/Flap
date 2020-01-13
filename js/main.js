@@ -1,3 +1,9 @@
+import Swup from 'swup';
+
+
+
+const swup = new Swup();
+
 function clicked(){
 	var li = document.createElement("li");
 	var inputValue = document.getElementById("myInput").value;
