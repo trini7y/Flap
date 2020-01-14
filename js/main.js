@@ -1,23 +1,24 @@
-import Swup from 'swup';
+// import Swup from 'swup';
 
 
 
-const swup = new Swup();
+// const swup = new Swup();
 
-function clicked(){
-	var li = document.createElement("li");
-	var inputValue = document.getElementById("myInput").value;
-	var tdText = document.createTextNode(inputValue);
-	li.appendChild(tdText);
-	if(inputValue === ""){
+let createBtn  = document.getElementById("btn");
+
+ function clicked(){
+ 	// console.log("done");
+ 	let input = ((document.getElementById("inputVal")||{}).value)||"";
+	let listIt = document.createElement("li");
+	let tdText = document.createTextNode(input);
+	listIt.appendChild(tdText);
+	if(input === ""){
 		alert("Please type something")
 	}
 	else{
 		document.createElement("p").value="\u9742";
-		document.getElementById("uList").appendChild(li);
-		li.style.border = "0.2px solid #0A0503";
-
+		console.log(document.getElementById("uList").appendChild(listIt));
+		listIt.style.border = "0.2px solid #0A0503";
 	}
-	document.getElementById("myInput").value = "";
-
+	// input.value = "";
 }

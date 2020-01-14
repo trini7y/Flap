@@ -1,0 +1,60 @@
+.home{
+	background:linear-gradient(100deg, rgba(255, 123, 0, 0.6) 0%, rgba(0, 123, 0, 0.6) 150%);
+	text-align:center;
+	min-height:100%;
+
+
+	.name{
+		margin-top:10%;
+
+		h2{
+			font-size:3em;
+			color:white;
+		}
+
+		input{
+			height:15vh;
+			width:50%;
+			font-size:2.5em;
+			border:none;
+			border-bottom:1px solid white;
+			background-color:transparent;
+			color:white;
+			outline:none;
+
+			// padding-top:5%;
+			&::placeholder{
+				color:white;
+			}
+		}
+		button{
+			// height:4em;
+			// width:10%;
+			border:1px solid white;
+			// border-radius:2px;
+			background:transparent;
+			cursor:pointer;
+			color:white;
+			font-size:1em;
+			padding:1.5% 5%;
+			outline:none;
+			font-size:2em;
+			transition: all 1s ease;
+			font-weight:bold;
+
+			&:hover{
+				color:rgba(0, 123, 0, 0.6);
+				background: white;
+				border:none;
+			}
+		}	
+	}
+}
+.transition-fade{
+	transition:.4s;
+	opacity:1;
+}
+html.is-animating .transition-fade{
+	opacity:0;
+	transform:translateY(-100px);
+}

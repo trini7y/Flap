@@ -535,14 +535,6 @@ body::-ms-scrollbar-thumb {
   border-radius: 5em;
   font-size: 1em; }
 
-.page {
-  display: none;
-  position: fixed;
-  max-height: 100vh; }
-
-.active {
-  display: block; }
-
 .home {
   background: linear-gradient(100deg, rgba(255, 123, 0, 0.6) 0%, rgba(0, 123, 0, 0.6) 150%);
   text-align: center;
@@ -603,6 +595,8 @@ form #myInput {
   background-color: transparent;
   outline: none;
   color: white; }
+  form #myInput::placeholder {
+    color: white; }
 
 .dummie {
   border-bottom: 0.2px solid #0A0503; }
@@ -626,7 +620,7 @@ ul {
   color: white;
   font-size: 50px;
   border-radius: 4px;
-  cursor: default;
+  cursor: pointer;
   padding: 1% 1%; }
 
 /*# sourceMappingURL=main.css.map */

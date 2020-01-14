@@ -1,0 +1,52 @@
+.todo-area{
+	background:linear-gradient(100deg, rgba(255, 123, 0, 0.6) 0%, rgba(0, 123, 0, 0.6) 150%);
+}
+.all{
+	text-align:center;
+}
+
+form{
+	
+	#myInput{
+	border:0;
+	width:50%;
+	padding-top:5%;
+	font-size: 3em;
+	border:none;
+	border-bottom:1px solid white;
+	background-color:transparent;
+	outline:none;
+	color:white;
+
+	&::placeholder{
+		color:white;
+	 }
+	}
+}
+.dummie{
+	border-bottom: 0.2px solid #0A0503;
+}
+ul{
+	border:0.1px solid #0A0503;
+	border-radius:3px;
+	width:30%;
+	margin:5% 0 0 0;
+	padding-bottom:2%;
+
+	li{
+	list-style: none;
+	font-size:1.5em;
+	width:100%;
+	margin-left:-10%;
+	text-align: center;
+  }
+} 
+.add{
+	background-color:#0A0503;
+	border:1px solid white;
+	color:white;
+	font-size:50px;
+	border-radius: 4px;
+	cursor: pointer;
+	padding:1% 1%;
+}
