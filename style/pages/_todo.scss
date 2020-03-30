@@ -1,52 +1,78 @@
 .todo-area{
 	background:linear-gradient(100deg, rgba(255, 123, 0, 0.6) 0%, rgba(0, 123, 0, 0.6) 150%);
+	// text-align:center;
 }
-.all{
-	text-align:center;
+body{
+	text-align: center;
 }
-
 form{
 	
-	#myInput{
-	border:0;
-	width:50%;
-	padding-top:5%;
-	font-size: 3em;
-	border:none;
-	border-bottom:1px solid white;
-	background-color:transparent;
-	outline:none;
-	color:white;
-
-	&::placeholder{
+	.todos{
+		border:0;
+		height:15vh;
+		width:60%;
+		font-size:8vh;
+		border:none;
+		border-bottom:1px solid white;
+		background-color:transparent;
 		color:white;
-	 }
+		outline:none;
+		&::placeholder{
+			color:white;
+		}
 	}
 }
 .dummie{
-	border-bottom: 0.2px solid #0A0503;
+	border: 0.2px solid #0A0503;
 }
 ul{
-	border:0.1px solid #0A0503;
-	border-radius:3px;
-	width:30%;
-	margin:5% 0 0 0;
-	padding-bottom:2%;
+	width:50%;
+	margin-top:5%;
+	margin-left:auto;
+	margin-right: auto;
+	padding-bottom:6%;
+	text-align: left;
+	
 
 	li{
 	list-style: none;
 	font-size:1.5em;
 	width:100%;
-	margin-left:-10%;
-	text-align: center;
+	margin-bottom: 3%;
+	box-shadow: 2px 2px 3px rgba(24, 18, 18, 0.5);
+	animation: fade-slide 1s forwards;
+
   }
 } 
 .add{
-	background-color:#0A0503;
+	background:transparent;
 	border:1px solid white;
 	color:white;
 	font-size:50px;
 	border-radius: 4px;
 	cursor: pointer;
-	padding:1% 1%;
+	padding:1.5% 5%;
+	outline:none;
+	font-size:6vh;
+	font-weight: bold;
+	transition: all 1s ease;
+
+
+	&:hover{
+		color:rgba(187, 199, 16, 0.6);
+		background: white;
+		border:none;
+	}
 }
+
+@keyframes fade-slide {
+	0% {
+	  opacity: 0;
+	  transform: translateY(50px);
+	}
+  
+	100% {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
