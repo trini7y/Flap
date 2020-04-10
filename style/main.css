@@ -542,39 +542,45 @@ body::-ms-scrollbar-thumb {
   .home .name {
     margin-top: 10%; }
     .home .name h2 {
-      font-size: 3em;
-      color: white; }
-    .home .name input {
+      font-size: 15vh;
+      color: white;
+      animation: fade-slide 1s forwards; }
+    .home .name #userName {
       height: 15vh;
       width: 50%;
-      font-size: 2.5em;
+      font-size: 10vh;
       border: none;
       border-bottom: 1px solid white;
       background-color: transparent;
       color: white;
-      outline: none; }
-      .home .name input::placeholder {
+      outline: none;
+      animation: fade-slide 1s forwards; }
+      .home .name #userName::placeholder {
         color: white; }
-    .home .name button {
+    .home .name #nav {
       border: 1px solid white;
       background: transparent;
       cursor: pointer;
       color: white;
-      font-size: 1em;
+      font-size: 10vh;
       padding: 1.5% 5%;
       outline: none;
       font-size: 2em;
       transition: all 1s ease;
-      font-weight: bold; }
-      .home .name button:hover {
+      font-weight: bold;
+      animation: fade-slide 1s forwards; }
+      .home .name #nav:hover {
         color: rgba(187, 199, 16, 0.6);
         background: white;
         border: none; }
 
-.transition-fade {
-  transition: .4s;
-  opacity: 1; }
-
+@keyframes fade-slide {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 .todo-area {
   background: linear-gradient(100deg, rgba(255, 123, 0, 0.6) 0%, rgba(0, 123, 0, 0.6) 150%); }
 
@@ -590,7 +596,8 @@ form .todos {
   border-bottom: 1px solid white;
   background-color: transparent;
   color: white;
-  outline: none; }
+  outline: none;
+  animation: fade-slide 1s forwards; }
   form .todos::placeholder {
     color: white; }
 
@@ -623,7 +630,8 @@ ul {
   outline: none;
   font-size: 6vh;
   font-weight: bold;
-  transition: all 1s ease; }
+  transition: all 1s ease;
+  animation: fade-slide 1s forwards; }
   .add:hover {
     color: rgba(187, 199, 16, 0.6);
     background: white;

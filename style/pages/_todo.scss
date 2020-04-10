@@ -17,6 +17,8 @@ form{
 		background-color:transparent;
 		color:white;
 		outline:none;
+		animation: fade-slide 1s forwards;
+
 		&::placeholder{
 			color:white;
 		}
@@ -56,6 +58,7 @@ ul{
 	font-size:6vh;
 	font-weight: bold;
 	transition: all 1s ease;
+	animation: fade-slide 1s forwards;
 
 
 	&:hover{
