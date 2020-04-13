@@ -587,6 +587,10 @@ body::-ms-scrollbar-thumb {
 body {
   text-align: center; }
 
+form .label {
+  position: fixed;
+  left: 4;
+  bottom: 10; }
 form .todos {
   border: 0;
   height: 15vh;
@@ -616,7 +620,6 @@ ul {
     font-size: 1.5em;
     width: 100%;
     margin-bottom: 3%;
-    box-shadow: 2px 2px 3px rgba(24, 18, 18, 0.5);
     animation: fade-slide 1s forwards; }
 
 .add {
@@ -636,6 +639,13 @@ ul {
     color: rgba(187, 199, 16, 0.6);
     background: white;
     border: none; }
+
+.lists {
+  border: 2px solid white;
+  box-shadow: 2px 2px 3px rgba(24, 18, 18, 0.5); }
+
+.date {
+  font-size: 12px; }
 
 @keyframes fade-slide {
   0% {

@@ -1,0 +1,18 @@
+{
+    "name":"Flap PWA app",
+    "short_name":"Flap",
+    
+    "icons":[
+
+    ],
+    "theme_color": "#f04",
+    "background_color":"#5b3",
+    "start_url":"/index.html",
+    "scope":".",
+    "display":"standalone",
+    "orientation":"any",
+    "description":"A todo list for keeping task",
+    "dir":"ltr",
+    "lang":"en-US"
+
+}
