@@ -1,3 +1,4 @@
+
 let createBtn  = document.getElementById("btn");;
 let date = new Date();
 	
@@ -50,5 +51,6 @@ createBtn.onclick = (e) => {
 		alert("You have not inputed any value");
 	}
 	// input.setAttribute("type", "text")
+
 	console.log(input);
 }
